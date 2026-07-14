@@ -22,7 +22,7 @@ jobs:
           dotnet-version: "8.0.x"
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore "User Auth.sln"
 
       - name: Build
-        run: dotnet build --no-restore
+        run: dotnet build "User Auth.sln" --no-restore
